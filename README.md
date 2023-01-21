@@ -1,6 +1,8 @@
 # play-music
  Criação de uma play-music
 
+![img-github](https://user-images.githubusercontent.com/110836621/213878189-8ded7358-2a03-4178-9401-ef5b5c8263f7.png)
+
 
 * Tecnologias Utilizadas
 
