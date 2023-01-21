@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Play-Music</title>
+</head>
+<body>
+    <header>
+        <h1>Play-music</h1>
+    </header>
+    <main>
+        <div class="play-1" id="play">
+            <img src="img/img-music.png" alt="">
+            <p class="desc">Play principal</p>
+            <section class="sectionPlay">
+                <i class="fa fa-backward" aria-hidden="true"></i>
+                <i class="fa fa-play buttonPrincipal" aria-hidden="true"></i>
+                <i class="fa fa-forward" aria-hidden="true"></i>
+            </section>
+            <p class="barraMusic"><span></span></p>
+            <p class="tempMusic"><span class="minutosPrincipal">00</span>:<span class="segundosPrincipal">00</span></p>
+            <audio class="audio" id="audioPrincipal" src=""></audio>
+        </div>
+
+        <div class="play-2" id="play">
+            <img src="img/img-music.png" alt="">
+            <p class="desc">Favoritos</p>
+            <section class="sectionPlay">
+                <i class="fa fa-backward" aria-hidden="true"></i>
+                <i class="fa fa-play" aria-hidden="true"></i>
+                <i class="fa fa-forward" aria-hidden="true"></i>
+            </section>
+            <p class="barraMusic"><span></span></p>
+            <p class="tempMusic"><span class="minutos">00</span>:<span class="segundos">00</span></p>
+
+            <audio class="audio" src=""></audio>
+            
+        </div>
+
+        <div class="play-3 containerMusic" id="play"></div>
+    </main>
+    <script src="js/music.js"></script>
+    <script src="js/script.js"></script>
+
+    
+    
+    
+    
+</body>
+</html>

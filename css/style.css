@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  background-color: #1a001c;
+}
+h1 {
+  font-family: "Quicksand", sans-serif;
+  color: #ff5e35;
+  font-size: 16pt;
+  padding: 20px;
+}
+
+header {
+  margin: auto;
+  display: flex;
+  width: 80%;
+
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+main {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  grid-template-areas:
+    "A C"
+    "B C";
+  width: 100%;
+  padding:20px 0px ;
+  height: auto;
+  background-image: url("../img/fundo-main.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+div {
+  margin: auto;
+  text-align: center;
+  width: 200px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #260128;
+  box-shadow: 0px 10px 20px  black ;
+}
+
+
+.play-1 {
+  grid-area: A;
+}
+
+#play img {
+  width: 160px;
+  height: 150px;
+  margin-top: 15px;
+  border-radius: 10px;
+background-position: 200%;
+ animation:  linear infinite 3s;
+  
+}
+
+@keyframes animar{
+    0%{
+        transform: translatey(0px);
+    }
+
+    50%{
+        transform: translatey(-10px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+
+.desc {
+  font-family: "Montserrat Alternates", sans-serif;
+  letter-spacing: 1px;
+  font-size: 8pt;
+  color: #921d63;
+}
+
+.play-2 {
+  grid-area: B;
+}
+.play-3 {
+  grid-area: C;
+  height: 100%;
+}
+
+.sectionPlay {
+  padding: 10px 0px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.sectionPlay i {
+  color: #ff5e35;
+  cursor: pointer;
+}
+.barraMusic {
+  text-align: left;
+  margin: auto;
+  width: 80%;
+  height: 3px;
+  background-color: rgba(220, 220, 220, 0.137);
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.barraMusic::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #ff5d3593;
+  border-radius: 10px;
+}
+
+.tempMusic {
+  margin: auto;
+  text-align: left;
+  width: 80%;
+  font-size: 10pt;
+  margin-bottom: 10px;
+  color: #921d63;
+}
