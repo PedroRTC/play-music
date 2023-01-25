@@ -16,7 +16,7 @@ function fetchJson(url) {
 }
 
 async function RespMusic() {
-  todasMusic = await fetchJson(`http://127.0.0.1:5500/music.json`);
+  todasMusic = await fetchJson(`music.json`);
   geraMusic();
 }
 
